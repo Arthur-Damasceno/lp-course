@@ -2,7 +2,7 @@
 // encontrar as raízes reais da função.
 
 #include <stdio.h>
-#include <math.h>
+#include "../lib/utils.h"
 
 int main() {
     double a, b, c;
@@ -15,18 +15,18 @@ int main() {
         return 1;
     }
 
-    double delta = pow(b, 2) -4*a*c;
+    double delta = power(b, 2) -4 * a * c;
 
     if (delta < 0) {
         printf("A função não possui raízes reais!\n");
     } else if (delta == 0) {
-        double root = -b / (2*a);
+        double root = -b / (2 * a);
 
         printf("A raiz da função é %lf\n", root);
     } else {
         double sqrtDelta = sqrt(delta);
-        double root1 = (-b + sqrtDelta) / (2*a);
-        double root2 = (-b - sqrtDelta) / (2*a);
+        double root1 = (-b + sqrtDelta) / (2 * a);
+        double root2 = (-b - sqrtDelta) / (2 * a);
 
         printf("As raízes são %lf e %lf\n", root1, root2);
     }

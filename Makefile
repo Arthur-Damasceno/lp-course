@@ -1,12 +1,12 @@
 clean:
 	rm *.out *.o
 
-quadratic: quadratic.o
-	gcc -o quadratic.out quadratic.o -lm
+quadratic: quadratic.o utils.o
+	gcc -o quadratic.out quadratic.o utils.o
 	./quadratic.out
 
-cosine: cosine.o factorial.o
-	gcc -o cosine.out cosine.o factorial.o -lm
+cosine: cosine.o factorial.o utils.o
+	gcc -o cosine.out cosine.o factorial.o utils.o
 	./cosine.out
 
 contest: contest.o
@@ -38,3 +38,6 @@ temperature.o: temperature/main.c
 
 factorial.o: lib/factorial.c
 	gcc -c lib/factorial.c
+
+utils.o: lib/utils.c
+	gcc -c lib/utils.c
