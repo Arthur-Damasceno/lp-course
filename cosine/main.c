@@ -6,6 +6,8 @@
 #include <math.h>
 #include "../lib/factorial.h"
 
+const double PERIOD = 2 * 3.141592654;
+
 int main() {
     double x;
     double sum = 1;
@@ -14,6 +16,10 @@ int main() {
     printf("Digite o ângulo em radianos: ");
     scanf("%lf", &x);
     x = x >= 0 ? x : -x;
+
+    while (x > PERIOD) {
+        x -= PERIOD;
+    }
 
     for (int i = 2; i < 19; i += 2) {
         double result = pow(x, i) / factorial(i);
