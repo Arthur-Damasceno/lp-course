@@ -28,7 +28,7 @@ int main() {
         double root1 = (-b + sqrtDelta) / (2 * a);
         double root2 = (-b - sqrtDelta) / (2 * a);
 
-        printf("As raízes são %lf e %lf\n", root1, root2);
+        printf("As raízes da função são %lf e %lf\n", root1, root2);
     }
 
     return 0;
