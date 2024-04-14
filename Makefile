@@ -21,6 +21,10 @@ temperature: temperature.o
 	gcc -o temperature.out temperature.o
 	./temperature.out
 
+menu: menu.o factorial.o utils.o
+	gcc -o menu.out menu.o factorial.o utils.o
+	./menu.out
+
 quadratic.o: quadratic/main.c
 	gcc -c quadratic/main.c -o quadratic.o
 
@@ -35,6 +39,9 @@ fibonacci.o: fibonacci/main.c
 
 temperature.o: temperature/main.c
 	gcc -c temperature/main.c -o temperature.o
+
+menu.o: menu/main.c
+	gcc -c menu/main.c -o menu.o
 
 factorial.o: lib/factorial.c
 	gcc -c lib/factorial.c
