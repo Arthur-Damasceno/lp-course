@@ -35,7 +35,20 @@ int sumDigits(int num) {
 }
 
 int main() {
+    int amount = 0;
+
     while (true) {
+        if (amount > 0) {
+            printf("Deseja continuar [S/n]?: ");
+
+            char exitOption;
+            scanf(" %c", &exitOption);
+
+            if (exitOption != 'S') {
+                return 0;
+            }
+        }
+
         printf("Digite um número não negativo: ");
 
         double num;
@@ -59,7 +72,7 @@ int main() {
                 printf("A raiz quadrade de %lf é %lf\n", num, sqrt(num));
                 break;
             case 3:
-                printf(isPrime(num) ? "O número %d é primo\n" : "O número %d não é primo\n", num);
+                printf(isPrime(num) ? "O número %d é primo\n" : "O número %d não é primo\n", (int)num);
                 break;
             case 4:
                 printf("A soma dos dígitos de %d é %d\n", (int)num, sumDigits(num));
@@ -76,6 +89,8 @@ int main() {
 
                 break;
         }
+
+        amount++;
     }
 
     return 0;
