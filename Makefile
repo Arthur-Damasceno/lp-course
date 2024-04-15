@@ -25,6 +25,10 @@ menu: menu.o factorial.o utils.o
 	gcc -o menu.out menu.o factorial.o utils.o
 	./menu.out
 
+calculator: calculator.o calculatorlib.o
+	gcc -o calculator.out calculator.o calculatorlib.o -lm
+	./calculator.out
+
 quadratic.o: quadratic/main.c
 	gcc -c quadratic/main.c -o quadratic.o
 
@@ -43,8 +47,14 @@ temperature.o: temperature/main.c
 menu.o: menu/main.c
 	gcc -c menu/main.c -o menu.o
 
+calculator.o: calculator/main.c
+	gcc -c calculator/main.c -o calculator.o
+
 factorial.o: lib/factorial.c
 	gcc -c lib/factorial.c
 
 utils.o: lib/utils.c
 	gcc -c lib/utils.c
+
+calculatorlib.o: calculator/calculator.c
+	gcc -o calculatorlib.o -c calculator/calculator.c
