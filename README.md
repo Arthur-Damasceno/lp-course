@@ -39,3 +39,11 @@
  ```
  >>> make menu
  ```
+
+## 2 - Funções e bibliotecas em **C**
+
+### Partes 1 e 2
+ - [Questão](calculator/main.c): Ler um número e executar a operação correspodente com as funções da [biblioteca](calculator/calculator.c).
+ ```
+ >>> make calculator
+ ```
