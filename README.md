@@ -47,3 +47,11 @@
  ```
  >>> make calculator
  ```
+
+## 4 - Vetores e matrizes em **C**
+
+### Parte 1
+ - [Questão](vector/main.c): Preencher um vetor com 10 valores e imprimir o maior, o menor,a média e o desvio padrão dos valores, além de retornar se cada número é primo e a soma dos sues dígitos.
+ ```
+ >>> make vector
+ ```
