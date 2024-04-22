@@ -29,6 +29,10 @@ calculator: calculator.o calculatorlib.o
 	gcc -o calculator.out calculator.o calculatorlib.o -lm
 	./calculator.out
 
+vector: vector.o calculatorlib.o
+	gcc -o vector.out vector.o calculatorlib.o -lm
+	./vector.out
+
 quadratic.o: quadratic/main.c
 	gcc -c quadratic/main.c -o quadratic.o
 
@@ -49,6 +53,9 @@ menu.o: menu/main.c
 
 calculator.o: calculator/main.c
 	gcc -c calculator/main.c -o calculator.o
+
+vector.o: vector/main.c
+	gcc -c vector/main.c -o vector.o
 
 factorial.o: lib/factorial.c
 	gcc -c lib/factorial.c
