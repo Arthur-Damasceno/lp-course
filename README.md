@@ -55,3 +55,11 @@
  ```
  >>> make vector
  ```
+
+### Parte 2
+ - [Questão](matrix/main.c): Preencher uma matriz 3x10, a qual representa as notas de
+ 10 alunos em 3 disciplinas, verificar se cada aluno foi aprovado com média maior
+ ou igual a 6 e calcular a média, a maior e a menor nota de cada disciplina.
+ ```
+ >>> make matrix
+ ```
