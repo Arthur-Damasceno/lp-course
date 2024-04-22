@@ -33,6 +33,10 @@ vector: vector.o calculatorlib.o
 	gcc -o vector.out vector.o calculatorlib.o -lm
 	./vector.out
 
+matrix: matrix.o
+	gcc -o matrix.out matrix.o
+	./matrix.out
+
 quadratic.o: quadratic/main.c
 	gcc -c quadratic/main.c -o quadratic.o
 
@@ -56,6 +60,9 @@ calculator.o: calculator/main.c
 
 vector.o: vector/main.c
 	gcc -c vector/main.c -o vector.o
+
+matrix.o: matrix/main.c
+	gcc -c matrix/main.c -o matrix.o
 
 factorial.o: lib/factorial.c
 	gcc -c lib/factorial.c
