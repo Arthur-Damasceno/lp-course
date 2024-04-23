@@ -48,6 +48,14 @@
  >>> make calculator
  ```
 
+## 3 - Arquivos em **C**
+
+### Parte 1
+ - [Questão](fileOperations/main.c): Ler números em um arquivo e verificar se são primos, além de calcular o seu fatorial e raiz quadrada.
+ ```
+ >>> make fileOperations
+ ```
+
 ## 4 - Vetores e matrizes em **C**
 
 ### Parte 1
