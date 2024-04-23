@@ -56,6 +56,12 @@
  >>> make fileOperations
  ```
 
+### Parte 2
+ - [Questão](fileTriangle/main.c): Ler os números de cada linha de um arquivo e verificar se podem formar um triângulo, caso possam, informar qual.
+ ```
+ >>> make fileTriangle
+ ```
+
 ## 4 - Vetores e matrizes em **C**
 
 ### Parte 1
