@@ -33,6 +33,10 @@ fileOperations: fileOperations.o calculatorlib.o
 	gcc -o fileOperations.out fileOperations.o calculatorlib.o -lm
 	./fileOperations.out
 
+fileTriangle: fileTriangle.o
+	gcc -o fileTriangle.out fileTriangle.o
+	./fileTriangle.out
+
 vector: vector.o calculatorlib.o
 	gcc -o vector.out vector.o calculatorlib.o -lm
 	./vector.out
@@ -64,6 +68,9 @@ calculator.o: calculator/main.c
 
 fileOperations.o: fileOperations/main.c
 	gcc -c fileOperations/main.c -o fileOperations.o
+
+fileTriangle.o: fileTriangle/main.c
+	gcc -c fileTriangle/main.c -o fileTriangle.o
 
 vector.o: vector/main.c
 	gcc -c vector/main.c -o vector.o
